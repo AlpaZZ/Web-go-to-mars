@@ -1,41 +1,160 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Kontak - Go To Mars</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>🚀 Go To Mars</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="about.html">Tentang Kami</a></li>
-        <li><a href="services.html">Layanan</a></li>
-        <li><a href="contact.html">Kontak</a></li>
-      </ul>
-    </nav>
-  </header>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kontak - Go To Mars</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><h1>🚀 Go To Mars</h1></li>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="services.html">Layanan</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <section>
-      <h2>Hubungi Kami</h2>
-      <form>
-        <label>Nama:</label><br>
-        <input type="text"><br>
-        <label>Email:</label><br>
-        <input type="email"><br>
-        <label>Pesan:</label><br>
-        <textarea rows="5"></textarea><br>
-        <button type="submit">Kirim</button>
-      </form>
-    </section>
-  </main>
+    <main class="page-content">
+      <section class="contact-hero">
+        <h2>📡 Hubungi Kami</h2>
+        <p class="hero-subtitle">
+          Siap untuk memulai petualangan luar angkasa Anda?
+        </p>
+      </section>
 
-  <footer>
-    <p>&copy; 2025 Go To Mars. Semua hak dilindungi galaksi 🪐</p>
-  </footer>
-</body>
+      <section class="contact-content">
+        <div class="contact-grid">
+          <div class="contact-form-section">
+            <h3>✉️ Kirim Pesan</h3>
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Nomor Telepon:</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+
+              <div class="form-group">
+                <label for="service">Paket yang Diminati:</label>
+                <select id="service" name="service">
+                  <option value="">Pilih Paket</option>
+                  <option value="mars-explorer">Mars Explorer</option>
+                  <option value="mars-vip">Mars VIP Experience</option>
+                  <option value="mars-training">Mars Training Program</option>
+                  <option value="mars-camping">Mars Camping Adventure</option>
+                  <option value="live-streaming">Mars Live Streaming</option>
+                  <option value="photography">Space Photography Tour</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Pesan:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Ceritakan impian luar angkasa Anda..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                🚀 Kirim Pesan
+              </button>
+            </form>
+          </div>
+
+          <div class="contact-info-section">
+            <h3>📞 Informasi Kontak</h3>
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">🏢</div>
+                <div class="contact-details">
+                  <h4>Kantor Pusat</h4>
+                  <p>
+                    Space Tower, Lantai 99<br />
+                    Jl. Galaksi Raya No. 2025<br />
+                    Jakarta Futuristik, Indonesia
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">📱</div>
+                <div class="contact-details">
+                  <h4>Telepon & WhatsApp</h4>
+                  <p>
+                    +62-800-MARS-2025<br />
+                    +62-800-6277-2025
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-details">
+                  <h4>Email</h4>
+                  <p>
+                    info@gotomars.space<br />
+                    booking@gotomars.space
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">🕐</div>
+                <div class="contact-details">
+                  <h4>Jam Operasional</h4>
+                  <p>
+                    24/7 - Siap melayani Anda<br />
+                    di seluruh galaksi
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="emergency-contact">
+              <h4>🚨 Emergency Space Hotline</h4>
+              <p class="emergency-number">+62-911-SPACE-HELP</p>
+              <p class="emergency-note">
+                Tersedia 24/7 untuk bantuan darurat misi luar angkasa
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-cta">
+        <h3>🌟 Siap Menjadi Space Explorer?</h3>
+        <p>
+          Jangan tunda lagi! Slot perjalanan Mars terbatas dan sangat diminati.
+        </p>
+        <a href="services.html" class="btn btn-secondary"
+          >🚀 Lihat Paket Perjalanan</a
+        >
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 Go To Mars. Semua hak dilindungi galaksi 🪐</p>
+        <div class="social-links">
+          <span>🌟 Follow us: </span>
+          <a href="#">Instagram</a> | <a href="#">Twitter</a> |
+          <a href="#">SpaceBook</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
