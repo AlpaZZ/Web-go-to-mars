@@ -167,7 +167,6 @@ nav a:hover {
   font-size: 2.5rem;
   color: #fff;
   margin-bottom: 3rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   background: linear-gradient(45deg, #ff4500, #ff6347);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
