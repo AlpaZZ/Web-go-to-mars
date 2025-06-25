@@ -716,6 +716,42 @@ footer p {
   color: #ccc;
 }
 
+/* Form improvements */
+.form-group select option {
+  background: #1a1a2e;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.form-group input[type="date"] {
+  cursor: pointer;
+}
+
+.form-group input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+/* Validation styles */
+.form-group input:invalid,
+.form-group select:invalid,
+.form-group textarea:invalid {
+  border-color: rgba(255, 0, 0, 0.5);
+}
+
+.form-group input:valid,
+.form-group select:valid,
+.form-group textarea:valid {
+  border-color: rgba(0, 255, 0, 0.3);
+}
+
+/* Loading state for form submission */
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
 /* Contact Info */
 /* .contact-info { */
 /* space-y: 2rem; */
